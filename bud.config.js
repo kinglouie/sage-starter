@@ -59,6 +59,7 @@ export default async (app) => {
    */
   app.wpjson
     .setSettings({
+      appearanceTools: true,
       background: {
         backgroundImage: true,
       },
@@ -78,6 +79,10 @@ export default async (app) => {
           'line-height': {},
         },
       },
+      layout: {
+        contentSize: '768px',
+        wideSize: '1280px'
+      },
       spacing: {
         padding: true,
         units: ['px', '%', 'em', 'rem', 'vw', 'vh'],
@@ -86,6 +91,7 @@ export default async (app) => {
         customFontSize: false,
       },
     })
+    .useTailwindSpacing()
     .useTailwindColors()
     .useTailwindFontFamily()
     .useTailwindFontSize();
