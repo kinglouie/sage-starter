@@ -9,13 +9,21 @@ const config = {
     './node_modules/flowbite/**/*.js'
   ],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      black: colors.black,
-      white: colors.white,
-      gray: colors.gray,
-      blue: colors.blue
+    extend: {
+      colors: {
+        primary: {
+          light: colors.blue[300],
+          DEFAULT: colors.blue[700],
+          dark: colors.blue[900],
+        },
+        black: colors.black,
+        white: colors.white,
+        gray: colors.gray,
+        green: colors.green,
+        red: colors.red,
+        transparent: 'transparent',
+        current: 'currentColor',
+      }, 
     }, 
   },
   plugins: [

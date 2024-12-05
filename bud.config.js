@@ -102,7 +102,7 @@ export default async (app) => {
       }
     })
     .useTailwindSpacing()
-    .useTailwindColors()
+    .useTailwindColors('extend')
     .useTailwindFontFamily()
     .useTailwindFontSize();
 };
