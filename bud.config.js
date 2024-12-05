@@ -61,6 +61,7 @@ export default async (app) => {
   app.wpjson
     .setSettings({
       appearanceTools: true,
+      useRootPaddingAwareAlignments: true,
       background: {
         backgroundImage: true,
       },
@@ -91,6 +92,14 @@ export default async (app) => {
       typography: {
         customFontSize: false,
       },
+    })
+    .setStyles({
+      spacing: {
+        padding: {
+          left: "2rem",
+          right: "2rem"
+			  }
+      }
     })
     .useTailwindSpacing()
     .useTailwindColors()

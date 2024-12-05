@@ -4,6 +4,7 @@
   "version": 2,
   "settings": {
     "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
     "background": {
       "backgroundImage": true
     },
@@ -1265,7 +1266,12 @@
       "wideSize": "1280px"
     },
     "spacing": {
-      "padding": true,
+      "padding": {
+        "top": 0,
+        "bottom": 0,
+        "left": "2rem",
+        "right": "2rem"
+      },
       "units": [
         "px",
         "%",

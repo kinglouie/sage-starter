@@ -18,15 +18,15 @@
 
     @include('sections.header')
 
-    <main id="main" class="main is-layout-constrained">
+    <main id="main" class="main has-global-padding is-layout-constrained">
       @yield('content')
     </main>
 
     @hasSection('sidebar')
-    <aside class="sidebar">
-      @yield('sidebar')
-    </aside>
-  @endif
+      <aside class="sidebar">
+        @yield('sidebar')
+      </aside>
+    @endif
 
     @include('sections.footer')
   </div>
