@@ -1,4 +1,5 @@
 import flowbite from 'flowbite/plugin.js';
+import colors from 'tailwindcss/colors.js';
 
 /** @type {import('tailwindcss').Config} config */
 const config = {
@@ -8,9 +9,14 @@ const config = {
     './node_modules/flowbite/**/*.js'
   ],
   theme: {
-    extend: {
-      colors: {}, // Extend Tailwind's default colors
-    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      blue: colors.blue
+    }, 
   },
   plugins: [
     flowbite
