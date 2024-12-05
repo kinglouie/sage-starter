@@ -1266,12 +1266,7 @@
       "wideSize": "1280px"
     },
     "spacing": {
-      "padding": {
-        "top": 0,
-        "bottom": 0,
-        "left": "2rem",
-        "right": "2rem"
-      },
+      "padding": true,
       "units": [
         "px",
         "%",
@@ -1544,6 +1539,14 @@
           "slug": "9xl"
         }
       ]
+    }
+  },
+  "styles": {
+    "spacing": {
+      "padding": {
+        "left": "2rem",
+        "right": "2rem"
+      }
     }
   }
 }
