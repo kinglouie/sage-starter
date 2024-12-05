@@ -1,0 +1,6 @@
+#menu-to-edit li.menu-item-depth-0 .acf-field-menu-item-enable-megamenu {
+  display: block;
+}
+#menu-to-edit li:not(.menu-item-depth-0) .acf-field-menu-item-enable-megamenu {
+  display: none;
+}

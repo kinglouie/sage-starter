@@ -17,6 +17,11 @@ add_action('wp_enqueue_scripts', function () {
     bundle('app')->enqueue();
 }, 100);
 
+add_action('admin_enqueue_scripts', function () {
+    bundle('admin')->enqueue();
+}, 100);
+
+
 /**
  * Register the theme assets with the block editor.
  *
@@ -123,7 +128,7 @@ add_action('widgets_init', function () {
     ] + $config);
 });
 
-// this removes a unwanted redirect with the devserver on the wordpress homepage redirecting to the non devserver URL
+// removes unwanted redirect with the devserver on the wordpress homepage redirecting to the non devserver URL
 if (getenv('WP_ENV') === 'development') {
     remove_action('template_redirect', 'redirect_canonical');
 }
