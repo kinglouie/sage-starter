@@ -1,9 +1,6 @@
 <header>
   <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-    <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">allure</span>
-    </a>
+    @include('partials.logo')
     @php($menu = Navi::build('primary_navigation'))
     @if ($menu->isNotEmpty())
       <nav class="hidden md:block">
