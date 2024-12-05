@@ -18,6 +18,12 @@
 
     @include('sections.header')
 
+    @if (!is_front_page())
+      <div class="mx-auto max-w-screen-xl p-4">
+        <x-breadcrumb />
+      </div>
+    @endif
+
     <main id="main" class="main has-global-padding is-layout-constrained">
       @yield('content')
     </main>
