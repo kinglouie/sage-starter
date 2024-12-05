@@ -5,3 +5,7 @@ git clone https://github.com/kinglouie/sage-starter-devenv.git
 lando start
 lando init-wp
 ```
+
+## Dependencies
+
+- advanced-custom-fields-pro
